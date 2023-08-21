@@ -43,13 +43,14 @@
 
         <p>Subscribe and get notified</p>
 
-        <form action="#">
+        <form onsubmit="return false" novalidate>
           <div class="form-group">
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Your email address..."
+              required
             />
             <!-- <p class="errorMsg">Please provide a valid email adress</p> -->
           </div>
@@ -61,7 +62,7 @@
 
       <footer>
         <div class="social-container">
-          <a href="#" class="fa-brands fa-facebook-f"></a>
+          <a href="#" class="fa-brands fa-facebook"></a>
           <a href="#" class="fa-brands fa-twitter"></a>
           <a href="#" class="fa-brands fa-instagram"></a>
         </div>
