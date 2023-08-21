@@ -1,37 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Ping coming soon page</title>
 
-  We are launching soon!
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="" />
+      </header>
+      <main>
+        <h1 class="gray-text">
+          We are launching <span class="dark-blue-text">soon!</span>
+        </h1>
 
-  Subscribe and get notified
+        <p>Subscribe and get notified</p>
 
-  Notify Me
+        <form action="#">
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address..."
+            />
+            <!-- <p class="errorMsg">Please provide a valid email adress</p> -->
+          </div>
+          <button>Notify Me</button>
+        </form>
 
-  &copy; Copyright Ping. All rights reserved.
+        <img src="images/illustration-dashboard.png" alt="" />
+      </main>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      <footer>
+        <div class="social-container">
+          <a href="#" class="fa-brands fa-facebook-f"></a>
+          <a href="#" class="fa-brands fa-twitter"></a>
+          <a href="#" class="fa-brands fa-instagram"></a>
+        </div>
+        <p>&copy; Copyright Ping. All rights reserved.</p>
 
-  <script src="main.js"></script>
-</body>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Infferna</a>.
+        </p>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
