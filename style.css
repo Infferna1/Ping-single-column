@@ -94,6 +94,7 @@ p {
 
 form {
   display: flex;
+  margin-top: 2.5rem;
   width: 95%;
   gap: 12px;
   flex-direction: column;
@@ -105,7 +106,6 @@ form {
 }
 
 input {
-  margin-top: 1.8rem;
   border: 1px solid var(--pale-blue);
   border-radius: 2rem;
   padding-top: 14px;
@@ -114,12 +114,12 @@ input {
 }
 
 input[type] {
-    font-size: 0.9rem;
-    font-weight: var(--fw300);
+  font-size: 0.9rem;
+  font-weight: var(--fw300);
 }
 
 .invalid {
-    border: 2px solid var(--light-red);
+  border: 2px solid var(--light-red);
 }
 
 ::placeholder {
@@ -151,7 +151,7 @@ button {
 }
 
 button:hover {
-    filter:brightness(1.1);
+  filter: brightness(1.1);
 }
 
 img {
@@ -159,28 +159,28 @@ img {
 }
 
 main img {
-    margin-top: 4.5rem;
-    margin-bottom: 8rem;
+  margin-top: 4.5rem;
+  margin-bottom: 8rem;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 4rem;
-    margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 4rem;
+  margin-bottom: 2.5rem;
 }
 
 footer p {
-    text-align: center;
-    font-size: 0.7rem;
-    color: var(--gray);
-    margin-bottom: 2rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
 }
 
 .fa-brands {
@@ -189,10 +189,61 @@ footer p {
 }
 
 .attribution {
-    margin: 0;
+  margin: 0;
 }
 
-.attribution a{
-    text-decoration: none;
-    color: var(--blue)
+.attribution a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+@media (min-width: 1000px) {
+  body {
+    max-width: 1440px;
+  }
+  
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  main p {
+    font-size: 1.2rem;
+    font-weight: var(--fw300);
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+  input {
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+
+  input[type] {
+    font-size: 1rem;
+  }
+
+  ::placeholder {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
