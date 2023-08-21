@@ -31,13 +31,15 @@ submit.addEventListener("click", () => {
 
     const existingError = input.nextElementSibling;
     if (!existingError || !existingError.classList.contains("errorMsg")) {
-        const errorMsg = document.createElement("p");
-        errorMsg.classList.add("errorMsg");
-        errorMsg.innerText = "Please provide a valid email adress";
-        input.insertAdjacentElement("afterend", errorMsg);
+      const errorMsg = document.createElement("p");
+      let message = isEmpty
+        ? "Whoops! It looks like you forgot to add your email"
+        : "Please provide a valid email adress";
+      errorMsg.classList.add("errorMsg");
+      errorMsg.innerText = message;
+      input.insertAdjacentElement("afterend", errorMsg);
     }
-  }
-  else {
+  } else {
     input.classList.remove("invalid");
     removeError();
   }
